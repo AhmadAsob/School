@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "2dbc91fb-2069-40b8-8cf3-afafb9297ff9",
+		"name": "School",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20481543"
+	},
+	"item": [
+		{
+			"name": "getAllStudent",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/students/getAllStudent",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"students",
+						"getAllStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudentByFilterId",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/students/getStudentByFilterId/2",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"students",
+						"getStudentByFilterId",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateStatusRead Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"3\",\r\n    \"name\" : \"Hasdasdasdasd\",\r\n    \"email\" : \"adasdeadasdf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/students/insertStudent",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"students",
+						"insertStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteStudent",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/students/deleteStudent/3",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"students",
+						"deleteStudent",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
